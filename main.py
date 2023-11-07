@@ -5,8 +5,11 @@ from fastapi import FastAPI
 from documentations.description import api_description
 from documentations.tags import tags_metadata
 
+
 # Routers 
-import routers.router_reservations, routers.router_user, routers.router_workspace, routers.router_auth, routers.router_stripe
+import routers.router_reservations, routers.router_user, routers.router_workspace
+import routers.router_auth, routers.router_stripe
+
 
 # Initialisation de l'API
 app = FastAPI(
