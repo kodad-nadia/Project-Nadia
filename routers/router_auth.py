@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
+# from database.firebase import authUser
 from database.firebase import authSession
 from firebase_admin import auth
 
