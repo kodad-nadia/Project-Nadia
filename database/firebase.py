@@ -14,3 +14,7 @@ if not firebase_admin._apps:
 firebase = pyrebase.initialize_app(json.loads(config['FIREBASE_CONFIG']))
 db = firebase.database()
 authUser = firebase.auth()
+
+firebase = pyrebase.initialize_app(json.loads(config['FIREBASE_CONFIG']))
+db = firebase.database()
+authSession = firebase.auth()
